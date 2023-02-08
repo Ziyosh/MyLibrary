@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#665950"
+        android:text="About"
+        app:layout_constraintEnd_toEndOf="@+id/btnFavoriteBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnFavoriteBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnFavoriteBooks" />
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/boook"/>
+
+    <TextView
+        android:id="@+id/txtLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/almendra"
+        android:text="My Library"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSeeAllBooks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtLicence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Developed by Ziyoda"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSeeAllBooks"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#665950"
+        android:fontFamily="sans-serif-black"
+        android:text="See All Books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLibrary" />
+
+    <Button
+        android:id="@+id/btnCurrReadingBooks"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#665950"
+        android:text="Currently Reading Books"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlreadyReadBooks"
+        app:layout_constraintEnd_toEndOf="@+id/btnSeeAllBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnSeeAllBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnSeeAllBooks" />
+
+    <Button
+        android:id="@+id/btnAlreadyReadBooks"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#665950"
+        android:text="Already Read Books"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnCurrReadingBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnCurrReadingBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnCurrReadingBooks" />
+
+    <Button
+        android:id="@+id/btnWishlist"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#665950"
+        android:text="Your Wishlist"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlreadyReadBooks"
+        app:layout_constraintStart_toStartOf="@+id/btnAlreadyReadBooks"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlreadyReadBooks" />
+
+    <Button
+        android:id="@+id/btnFavoriteBooks"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#665950"
+        android:text="See Your Favorites"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/btnWishlist"
+        app:layout_constraintStart_toStartOf="@+id/btnWishlist"
+        app:layout_constraintTop_toBottomOf="@+id/btnWishlist" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
